@@ -1,0 +1,201 @@
+contato.html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+    <script>
+
+    </script>
+</head>
+<body>
+    <h1>Entre em Contato</h1>
+    <form onsubmit="return validarFormulario()">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="whatsapp">Whatsapp:</label>
+        <input type="text" id="whatsapp" name="whatsapp" required><br><br>
+
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <h2>Redes Sociais</h2>
+    <p>Me siga no instagram!</p>
+    <ul>
+         <li><a href="https://www.instagram.com/aaaaaavitoriaaaaa/" target="_blank">Instagram</a></li>
+    </ul>
+</body>
+</html>
+
+
+index.html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Pessoal</title>
+    <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+    <h1>Minha página!</h1>
+
+    <!-- Menu de Navegação -->
+    <nav>
+        <a href="portfolio.html">Portfólio</a>
+        <a href="musicas.html">Músicas</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="jogo.html">Jogo</a>
+    </nav>
+
+    <!-- Área Foto e Nome -->
+    <div>
+        <!-- Foto -->
+        <img src="Imagem/laryssa2.jpg" alt="Foto de Laryssa Vitória" class="foto">
+
+        <!-- Nome Completo -->
+        <p><strong>Laryssa Vitória De Lima Domingos</strong></p>
+
+        <!-- Descrição -->
+        <p>Olá, sou Laryssa Vitória De Lima Domingos. Sou apaixonada por música, tenho uma grande conexão com minha família e amigos, e adoro aprender novas coisas novas</p>
+    </div>
+
+</body>
+</html>
+
+
+musicas.html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlie Brown Jr</title>
+    <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Charlie Brown Jr</h1>
+        <a href="https://youtu.be/jp288zfsNTI?si=VwQlGm-0hmP6m_Oy" target="_blank">Meu Novo Mundo</a>
+        <a href="https://youtu.be/AktA7DH9LOc?si=w2ltWoF-wCgeUzTO" target="_blank">Ela Vai Voltar</a>
+        <a href="https://youtu.be/JRJj4z-prvM?si=phVPp4ih33c95DNd" target="_blank">Só os Loucos Sabem</a>
+        <a href="https://youtu.be/TJRIZS4Z7Mw?si=K4mn0-sWmMYQMNHW" target="_blank">Proibida Pra Mim</a>
+    </div>
+</body>
+</html>
+portfolio.html:
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+    <h1>Meu Portfólio</h1>
+
+    <a href="imc.html">Calculadora IMC</a>
+    <a href="calculadora.html">Calculadora</a>
+    <a href="conversores.html">Conversores</a>
+
+</body>
+</html>
+quiz.html:
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Simples de Conhecimentos Gerais</title>
+    <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1>Quiz de Conhecimentos Gerais</h1>
+
+    <form id="quizForm">
+        <div class="question active" id="q1">
+            <p>1. Qual é o nome do maior animal terrestre?</p>
+            <input type="radio" name="q1" value="Elefante"> Elefante<br>
+            <input type="radio" name="q1" value="Girafa"> Girafa<br>
+            <input type="radio" name="q1" value="Rinoceronte"> Rinoceronte<br>
+            <button type="button" onclick="nextQuestion(1)">Próxima</button>
+        </div>
+
+        <div class="question" id="q2">
+            <p>2. Qual é o nome do famoso super-herói que tem a capa vermelha e voa pelo céu?</p>
+            <input type="radio" name="q2" value="Superman"> Superman<br>
+            <input type="radio" name="q2" value="Homem-Aranha"> Homem-Aranha<br>
+            <input type="radio" name="q2" value="Batman"> Batman<br>
+            <button type="button" onclick="prevQuestion(2)">Anterior</button>
+            <button type="button" onclick="nextQuestion(2)">Próxima</button>
+        </div>
+
+        <div class="question" id="q3">
+            <p>3. Qual cantor é conhecido como o "Rei do Pop"?</p>
+            <input type="radio" name="q3" value="Michael Jackson"> Michael Jackson<br>
+            <input type="radio" name="q3" value="Elvis Presley"> Elvis Presley<br>
+            <input type="radio" name="q3" value="Madonna"> Madonna<br>
+            <button type="button" onclick="prevQuestion(3)">Anterior</button>
+            <button type="button" onclick="nextQuestion(3)">Próxima</button>
+        </div>
+
+        <div class="question" id="q4">
+            <p>4. Em qual esporte o Brasil é conhecido por ter muita tradição, ganhando várias Copas do Mundo?</p>
+            <input type="radio" name="q4" value="Futebol"> Futebol<br>
+            <input type="radio" name="q4" value="Vôlei"> Vôlei<br>
+            <input type="radio" name="q4" value="Basquete"> Basquete<br>
+            <button type="button" onclick="prevQuestion(4)">Anterior</button>
+            <button type="button" onclick="nextQuestion(4)">Próxima</button>
+        </div>
+
+        <div class="question" id="q5">
+            <p>5. Qual é o nome da famosa franquia de filmes com o personagem "Harry Potter"?</p>
+            <input type="radio" name="q5" value="Harry Potter"> Harry Potter<br>
+            <input type="radio" name="q5" value="O Senhor dos Anéis"> O Senhor dos Anéis<br>
+            <input type="radio" name="q5" value="Star Wars"> Star Wars<br>
+            <button type="button" onclick="prevQuestion(5)">Anterior</button>
+            <button type="button" onclick="calcularPontuacao()">Finalizar Quiz</button>
+        </div>
+    </form>
+
+    <p id="resultado"></p>
+
+    <script src="JS/Quiz.js"></script>
+</body>
+</html>
+sobre.html:<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - Laryssa Vitória</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <nav>
+    </nav>
+    <div class="container">
+        <h1>Sobre Mim</h1>
+        <p>Oii, Meu nome é Laryssa Vitoria De Lima Domingos, Sou de palmares, eu adoro escutar musica, minha banda favorita é Charlie Browm jr, sou muito proxima da minha familia e tenho amigos muito especiais, tenho 3 cachorras, e tenho muitos gatinhos, ja estudei no ginasio, vitoria regia, que foram escolas incriveis</p>
+    </div>
+</body>
+</html>
+
+
+
+
