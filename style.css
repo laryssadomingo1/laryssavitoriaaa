@@ -1,0 +1,147 @@
+ /* Estilo geral da página */
+body {
+    font-family: "Verdana", sans-serif;
+    background-color: #FCE4EC; /* Rosa claro */
+    color: #880E4F; /* Rosa escuro */
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.regular-font {
+    font-family: "Tahoma", sans-serif;
+    font-weight: 400;
+}
+
+.bold-font {
+    font-family: "Tahoma", sans-serif;
+    font-weight: 700;
+}
+
+.italic-font {
+    font-family: "Tahoma", sans-serif;
+    font-style: italic;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #F06292; /* Rosa forte */
+    color: #FFFFFF; /* Branco */
+    padding: 40px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra mais forte */
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Seções principais de conteúdo */
+main {
+    padding: 30px;
+}
+
+section {
+    background-color: #F8BBD0; /* Rosa pálido */
+    border: 3px solid #D81B60; /* Rosa escuro */
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra forte */
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 900px;
+}
+
+section h2 {
+    color: #D81B60; /* Rosa escuro */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos botões */
+button {
+    background-color: #D81B60; /* Rosa escuro */
+    color: #FFFFFF; /* Branco */
+    border: none;
+    padding: 15px 30px;
+    margin-top: 15px;
+    border-radius: 8px;
+    font-size: 1.3em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #F06292; /* Rosa forte */
+    transform: scale(1.05); /* Efeito de aumento */
+}
+
+/* Input de texto */
+input[type="text"] {
+    border: 2px solid #D81B60; /* Rosa escuro */
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1.1em;
+    width: 70%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+input[type="text"]::placeholder {
+    color: #F48FB1; /* Rosa claro para placeholder */
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #F06292; /* Rosa forte */
+    color: #FFFFFF; /* Branco */
+    padding: 15px 25px;
+    margin-top: 40px;
+    font-size: 1em;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+}
+
+/* Estilo para imagens */
+img {
+    border: 4px solid #D81B60; /* Rosa escuro */
+    border-radius: 10px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Sombra mais forte */
+    margin: 25px 0;
+    transition: transform 0.3s ease;
+}
+
+/* Estilo para vídeos */
+video {
+    border: 4px solid #D81B60; /* Rosa escuro */
+    border-radius: 10px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Sombra mais forte */
+    margin: 25px 0;
+    transition: transform 0.3s ease;
+}
+
+video:hover {
+    transform: scale(1.05); /* Efeito de aumento */
+}
+
+img:hover {
+    transform: scale(1.05); /* Aumento suave ao passar o mouse */
+}
+
+/* Mensagens e letras erradas */
+#letrasErradas {
+    color: #F06292; /* Rosa forte */
+    font-weight: bold;
+}
+
+#mensagem {
+    font-size: 1.7em;
+    margin-top: 20px;
+    color: #880E4F; /* Rosa escuro */
+}
